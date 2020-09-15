@@ -1,0 +1,36 @@
+{
+	"auth": {
+		"amplifymlexamples50d2a717": {
+			"service": "Cognito",
+			"providerPlugin": "awscloudformation",
+			"dependsOn": [],
+			"customAuth": false
+		}
+	},
+	"predictions": {
+		"identifyTextc03d11a7": {
+			"providerPlugin": "awscloudformation",
+			"service": "RekognitionAndTextract",
+			"dependsOn": [],
+			"identifyType": "identifyText"
+		},
+		"identifyLabels86f75374": {
+			"providerPlugin": "awscloudformation",
+			"service": "Rekognition",
+			"dependsOn": [],
+			"identifyType": "identifyLabels"
+		},
+		"identifyEntities5a9ffc7e": {
+			"providerPlugin": "awscloudformation",
+			"service": "Rekognition",
+			"dependsOn": [],
+			"identifyType": "identifyEntities"
+		}
+	},
+	"hosting": {
+		"S3AndCloudFront": {
+			"service": "S3AndCloudFront",
+			"providerPlugin": "awscloudformation"
+		}
+	}
+}

@@ -1,25 +1,42 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import "./App.css";
+import Header from "./Header";
+import TextIdentification from "./TextIdentification";
+import LabelsIdentification from "./LabelsIdentification";
+import EntitiesIdentification from "./EntitiesIdentification";
+
+import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+
+import Amplify from "aws-amplify";
+import { AmazonAIPredictionsProvider } from "@aws-amplify/predictions";
+import awsconfig from "./aws-exports";
+Amplify.configure(awsconfig);
+Amplify.addPluggable(new AmazonAIPredictionsProvider());
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Router>
+      <div className="App">
+        <Switch>
+          <Route path="/TextIdentification">
+            <Header />
+            <TextIdentification />
+          </Route>
+          <Route path="/LabelsIdentification">
+            <Header />
+            <LabelsIdentification />
+          </Route>
+          <Route path="/EntitiesIdentification">
+            <Header />
+            <EntitiesIdentification />
+          </Route>
+          <Route path="/">
+            <Header />
+            <h1>AWS Amplify Workshop</h1>
+          </Route>
+        </Switch>
+      </div>
+    </Router>
   );
 }
 
