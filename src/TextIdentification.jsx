@@ -50,7 +50,7 @@ function TextIdentification() {
             <>
               Upload an Image having some text data or use{" "}
               <a
-                href="https://s3-us-west-2.amazonaws.com/bucket.aws/share/TextIdentificaiton.jpg"
+                href="https://s3-us-west-2.amazonaws.com/bucket.aws/share/AmlifyMLImages.zip"
                 target="_blank"
                 download
               >

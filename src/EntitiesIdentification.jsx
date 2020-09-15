@@ -46,7 +46,7 @@ function LabelsIdentification() {
   return (
     <div className="Text">
       <div style={{ padding: 50 }}>
-        <h1>Entity Identification</h1>
+        <h1>Celebrity Identification</h1>
         <input type="file" onChange={identifyFromFile}></input>
         <hr />
         <div className="Labels-Identification">
@@ -64,10 +64,9 @@ function LabelsIdentification() {
             <img src={uploadedImage.preview} alt="dummy" />
           ) : (
             <>
-              Upload an Image having some celebrities like Jeff Bezos, Julie
-              Sweet or use{" "}
+              Upload an Image having some celebrities like CEOs, Actors or use{" "}
               <a
-                href="https://s3-us-west-2.amazonaws.com/bucket.aws/share/EntityRecognition.jpg"
+                href="https://s3-us-west-2.amazonaws.com/bucket.aws/share/AmlifyMLImages.zip"
                 target="_blank"
                 download
               >

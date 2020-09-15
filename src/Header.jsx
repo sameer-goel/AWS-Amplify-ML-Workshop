@@ -14,7 +14,7 @@ function Header() {
         bg="dark"
         variant="dark"
       >
-        <Navbar.Brand href="/">AWS Amplify ML</Navbar.Brand>
+        <Navbar.Brand href="/">AWS Amplify - ML</Navbar.Brand>
         <Navbar.Toggle aria-controls="responsive-navbar-nav" />
         <Navbar.Collapse id="responsive-navbar-nav">
           <Nav className="mr-auto">
@@ -23,7 +23,7 @@ function Header() {
               Labels Identification
             </Nav.Link>
             <Nav.Link href="/EntitiesIdentification">
-              Entities Identification
+              Celebrity Identification
             </Nav.Link>
           </Nav>
           <Nav>

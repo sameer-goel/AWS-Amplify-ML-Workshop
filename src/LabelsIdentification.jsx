@@ -68,7 +68,7 @@ function LabelsIdentification() {
             <>
               Upload an Image having some objects like lamp, cup or use{" "}
               <a
-                href="https://s3-us-west-2.amazonaws.com/bucket.aws/share/LabelIdentification.jpg"
+                href="https://s3-us-west-2.amazonaws.com/bucket.aws/share/AmlifyMLImages.zip"
                 target="_blank"
                 download
               >
