@@ -5,15 +5,35 @@
 1. [NodeJS](https://nodejs.org/en/)
 2. [VSCode](https://code.visualstudio.com/)/[Sublime](https://www.sublimetext.com/)/[Atom](https://flight-manual.atom.io/getting-started/sections/installing-atom/)
 3. [AWS CLI](https://docs.aws.amazon.com/cli/latest/userguide/install-cliv2.html)
-4. [AWS Amplify](https://docs.amplify.aws/cli/start/install)
+
+## Install Amplify
+
+`npm install -g @aws-amplify/cli`
 
 ## Clone the Repo
 
 `git clone https://github.com/sameer-goel/AWS-Amplify-ML-Workshop.git`
 
+## Navigate to the Repository
+
+`cd AWS-Amplify-ML-Workshop/`
+``
+
 ## Intialize Amplify
 
 `amplify init`
+
+
+## Configure the Amplify Setup 
+
+//TODO
+
+```shell script
+a483e7879e11:AWS-Amplify-ML-Workshop mac-user$ amplify init
+Note: It is recommended to run this command from the root of your app directory
+? Do you want to use an existing environment? (Y/n) --> y
+//
+```
 
 ## Install existing dependencies
 
