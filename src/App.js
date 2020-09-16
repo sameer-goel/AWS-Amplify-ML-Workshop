@@ -22,6 +22,7 @@ const LandingPageContent = () => {
         AWS Amplify Predictions category provides a solution for using AI and ML
         cloud services to enhance your application.
       </p>
+      <h3>Try ML feature:</h3>
       <ol>
         <li>
           <a href="/TextIdentification">Text Identification</a>

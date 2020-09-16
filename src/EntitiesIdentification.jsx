@@ -8,7 +8,7 @@ function LabelsIdentification() {
   const [uploadedImage, setUploadedImage] = useState([]);
   const [spinner, setSpinner] = useState("");
 
-  function identifyFromFile(event) {
+  function applyML(event) {
     setItems([]);
     setSpinner(LoadingSpinner);
     const {
@@ -33,7 +33,6 @@ function LabelsIdentification() {
       },
     })
       .then(({ entities }) => {
-        let i = 0;
         entities.forEach(({ boundingBox, landmarks, metadata }) => {
           setItems((prevItems) => [...prevItems, metadata.name]);
         });
@@ -45,9 +44,9 @@ function LabelsIdentification() {
   //   console.log(typeof celebs);
   return (
     <div className="Text">
-      <div style={{ padding: 50 }}>
+      <div className="Page-body">
         <h1>Celebrity Identification</h1>
-        <input type="file" onChange={identifyFromFile}></input>
+        <input type="file" onChange={applyML}></input>
         <hr />
         <div className="Labels-Identification">
           <div className="prediction-reults">
@@ -68,6 +67,7 @@ function LabelsIdentification() {
               <a
                 href="https://s3-us-west-2.amazonaws.com/bucket.aws/share/AmlifyMLImages.zip"
                 target="_blank"
+                rel="noopener noreferrer"
                 download
               >
                 Sample Image

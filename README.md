@@ -7,7 +7,7 @@
 3. [AWS CLI](https://docs.aws.amazon.com/cli/latest/userguide/install-cliv2.html)
 4. [AWS Amplify](https://docs.amplify.aws/cli/start/install)
 
-## Clone the Repo
+## Option 1: Clone the Repo
 
 `git clone https://github.com/sameer-goel/AWS-Amplify-ML-Workshop.git`
 
@@ -15,7 +15,7 @@
 
 `npm install`
 
-## Now we need to configure the CLI with our credentials.
+## Now we need to configure the Amplify
 
 ```
 amplify configure
@@ -34,7 +34,7 @@ amplify configure
 ```
 amplify init
 
-- Enter a name for the project: postagram
+- Enter a name for the project: sameer-ml-app
 - Enter a name for the environment: dev
 - Choose your default editor: Visual Studio Code (or your default editor)
 - Please choose the type of app that youre building: javascript

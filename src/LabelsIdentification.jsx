@@ -9,7 +9,7 @@ function LabelsIdentification() {
   const [uploadedImage, setUploadedImage] = useState({ preview: "", raw: "" });
   const [spinner, setSpinner] = useState("");
 
-  function identifyFromFile(event) {
+  function applyML(event) {
     setResponseObj([]);
     setImgObjects([]);
     setSpinner(LoadingSpinner);
@@ -44,9 +44,9 @@ function LabelsIdentification() {
 
   return (
     <div className="Text">
-      <div style={{ padding: 50 }}>
+      <div className="Page-body">
         <h1>Labels Identification</h1>
-        <input type="file" onChange={identifyFromFile}></input>
+        <input type="file" onChange={applyML}></input>
         <hr />
         {imgObjects.length === 0 ? spinner : <></>}
         <div className="Labels-Identification">
@@ -70,6 +70,7 @@ function LabelsIdentification() {
               <a
                 href="https://s3-us-west-2.amazonaws.com/bucket.aws/share/AmlifyMLImages.zip"
                 target="_blank"
+                rel="noopener noreferrer"
                 download
               >
                 Sample Image

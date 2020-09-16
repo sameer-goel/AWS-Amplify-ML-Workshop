@@ -13,6 +13,8 @@ function Header() {
         expand="lg"
         bg="dark"
         variant="dark"
+        fixed="top"
+        sticky="top"
       >
         <Navbar.Brand href="/">AWS Amplify - ML</Navbar.Brand>
         <Navbar.Toggle aria-controls="responsive-navbar-nav" />

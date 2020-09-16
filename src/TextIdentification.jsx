@@ -7,7 +7,7 @@ function TextIdentification() {
   const [response, setResponse] = useState("");
   const [uploadedImage, setUploadedImage] = useState({ preview: "", raw: "" });
 
-  function identifyFromFile(event) {
+  function applyML(event) {
     setResponse(LoadingSpinner);
     const {
       target: { files },
@@ -38,9 +38,9 @@ function TextIdentification() {
 
   return (
     <div className="identify-text">
-      <div style={{ padding: 50 }}>
+      <div className="Page-body">
         <h1>Text Identification</h1>
-        <input type="file" onChange={identifyFromFile} />
+        <input type="file" onChange={applyML} />
         <hr />
         <div className="prediction-reults">{response}</div>
         <div className="uploadedImage">
@@ -52,6 +52,7 @@ function TextIdentification() {
               <a
                 href="https://s3-us-west-2.amazonaws.com/bucket.aws/share/AmlifyMLImages.zip"
                 target="_blank"
+                rel="noopener noreferrer"
                 download
               >
                 Sample Image
