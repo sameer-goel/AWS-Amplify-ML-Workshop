@@ -11,10 +11,6 @@
 
 `git clone https://github.com/sameer-goel/AWS-Amplify-ML-Workshop.git`
 
-## Install existing dependencies
-
-`npm install`
-
 ## Now we need to configure the Amplify
 
 ```
@@ -50,6 +46,10 @@ amplify init
 ## Push the Amplify code to cloud
 
 `amplify push`
+
+## Install existing dependencies
+
+`npm install`
 
 > It will trigger cloudformation step
 
