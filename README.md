@@ -47,11 +47,11 @@ amplify init
 
 `amplify push`
 
+> It will trigger cloudformation step
+
 ## Install existing dependencies
 
 `npm install`
-
-> It will trigger cloudformation step
 
 ## Install existing dependencies
 
