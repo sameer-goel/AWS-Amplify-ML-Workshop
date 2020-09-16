@@ -57,6 +57,6 @@ amplify init
 
 `amplify delete`
 
-> Note: If it fails to cleanup, delete the cloudformation stack.
+> Note: If it fails to cleanup, delete the S3 bucket and also cloudformation stack.
 
 <hr />
