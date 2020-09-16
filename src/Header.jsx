@@ -33,7 +33,10 @@ function Header() {
             >
               Learn More
             </Nav.Link>
-            <Nav.Link href="https://github.com/sameer-goel/" target="_blank">
+            <Nav.Link
+              href="https://github.com/sameer-goel/AWS-Amplify-ML-Workshop"
+              target="_blank"
+            >
               Sameer Goel
             </Nav.Link>
           </Nav>
