@@ -53,10 +53,6 @@ amplify init
 
 `npm install`
 
-## Install existing dependencies
-
-`npm install`
-
 ## Cleanup
 
 `amplify delete`
